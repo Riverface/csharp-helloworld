@@ -6,6 +6,7 @@ public class MealTime
     AskWhatYouAteFor("breakfast");
     AskWhatYouAteFor("lunch");
     AskWhatYouAteFor("dinner");
+    Lessons.Pause();
   }
 
   public static void AskWhatYouAteFor(string meal)
@@ -13,5 +14,6 @@ public class MealTime
     Console.WriteLine("What did you eat for " + meal + "?");
     string yourMeal = Console.ReadLine();
     Console.WriteLine("You had " + yourMeal + " for " + meal + ".");
+  
   }
 }

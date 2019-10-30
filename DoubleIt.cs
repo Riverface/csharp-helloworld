@@ -10,5 +10,6 @@ public class DoubleIt
     int yourDoubledNumber = yourNumber * 2;
     string stringDoubledNumber = yourDoubledNumber.ToString();  // <-- New code
     Console.WriteLine("I doubled your number for you: " + stringDoubledNumber);
+    Lessons.Pause();
   }
 }
