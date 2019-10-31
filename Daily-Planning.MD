@@ -7,19 +7,25 @@
 
 #### Please list the names of the lessons you are going to work on today:
 
-* Compiling and executing programs
+* Arrays
 
-* Interactive Applications
+* Lists
 
-* Writing Methods
+* Dictionaries
+
+* Dictionary Applications and Scope
+
+* For Each Loops
+
+* For Loops
 
 #### Please list 3 concepts you are going to focus on today. (For example, css grids, html forms, string methods, etc.):
 
-1. Basic console/IDE usage
+1. slightly more advanced aspects of the console
 
-2. Variable manipulation
+2. More branching
 
-3. Primitive Branching
+3. A few looping exercises
 
 
 
@@ -28,13 +34,18 @@
 
 #### Please list the names of the lessons you completed today:
 
-* Compiling and executing programs
 
-* Interactive Applications
+* Arrays
 
-* Writing Methods
+* Lists
 
-* Branching with Booleans
+* Dictionaries
+
+* Dictionary Applications and Scope
+
+* For Each Loops
+
+* For Loops
 
 #### Please list the names of the projects you worked on today:
 
