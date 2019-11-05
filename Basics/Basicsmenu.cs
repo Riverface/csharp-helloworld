@@ -1,5 +1,6 @@
 using System;
 using static QueenAttack;
+using static Car;
 public class BasicsMenu
 {
     static string state = "";
@@ -42,6 +43,9 @@ public class BasicsMenu
         {
             case 1:
                 QueenAttack.Enter();
+                break;
+                case 2:
+                CarProg.Enter();
                 break;
             default:
                 Console.WriteLine("What?");
