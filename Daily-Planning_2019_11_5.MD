@@ -7,25 +7,20 @@
 
 #### Please list the names of the lessons you are going to work on today:
 
-* Arrays
+* Queen Attack
 
-* Lists
+* Creating Classes
 
-* Dictionaries
-
-* Dictionary Applications and Scope
-
-* For Each Loops
-
-* For Loops
+* Objects And Methods
 
 #### Please list 3 concepts you are going to focus on today. (For example, css grids, html forms, string methods, etc.):
 
-1. slightly more advanced aspects of the console
+1. Classes
 
-2. More branching
+2. Objects
 
-3. A few looping exercises
+3. Looping
+
 
 
 
@@ -35,21 +30,13 @@
 #### Please list the names of the lessons you completed today:
 
 
-* Arrays
-
-* Lists
-
-* Dictionaries
-
-* Dictionary Applications and Scope
-
-* For Each Loops
-
-* For Loops
+* Queen Attack
 
 #### Please list the names of the projects you worked on today:
 
-*  Combined console project of aforementioned materials' lessons.
+*  Combined console project of all console projects.
+
+*  Queen Attack
 
 
 #### Please add a link to GitHub repository to all projects you worked on today:

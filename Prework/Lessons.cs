@@ -9,9 +9,9 @@ using static GroceryList;
 
 public class Lessons
 {
-    static string state = "";
-    static int lesson = 0;
-    public static void Main()
+    public static string state = "";
+    public static int lesson = 0;
+    public static void Enter()
     {
 
         Projmenu();
