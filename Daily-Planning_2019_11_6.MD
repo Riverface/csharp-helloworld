@@ -1,23 +1,34 @@
 # Daily Planning Doc
 
-##### Date: 10/30/2019
+##### Date: 11/6/2019
 
 ## BEFORE BEGINNING WORK:
 
 
 #### Please list the names of the lessons you are going to work on today:
 
-* Creating Classes
+* Namespaces and File Structure
 
-* Objects And Methods
+* Access Modifiers
+
+* Getters and Setters
+
+* Encapsulation and Visibility
+
+* Static Methods
+
+* Dealership Refactor, Wildlife Park, Prime Sifting
+
+
 
 #### Please list 3 concepts you are going to focus on today. (For example, css grids, html forms, string methods, etc.):
 
-1. Classes
+1. Changing my spaghetti code to nice tidy Ravioli
 
-2. Objects
+2. Privatizing variables and using Getters/setters
 
-3. Looping
+3. General clean coding
+
 
 
 
@@ -27,15 +38,17 @@
 
 #### Please list the names of the lessons you completed today:
 
-* Creating Classes
 
-* Objects And Methods
+* Namespaces and File Structure
 
-* Instantiating Objects with Constructors
+* Access Modifiers
 
-* Dotnet Watcher
+* Getters and Setters
 
-* Debugging Tools
+* Encapsulation and Visibility
+
+* Static Methods
+
 
 #### Please list the names of the projects you worked on today:
 

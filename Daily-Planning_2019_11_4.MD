@@ -1,11 +1,13 @@
 # Daily Planning Doc
 
-##### Date: 11/5/2019
+##### Date: 11/4/2019
 
 ## BEFORE BEGINNING WORK:
 
 
 #### Please list the names of the lessons you are going to work on today:
+
+* Queen Attack
 
 * Creating Classes
 
@@ -27,19 +29,14 @@
 
 #### Please list the names of the lessons you completed today:
 
-* Creating Classes
 
-* Objects And Methods
-
-* Instantiating Objects with Constructors
-
-* Dotnet Watcher
-
-* Debugging Tools
+* Queen Attack
 
 #### Please list the names of the projects you worked on today:
 
 *  Combined console project of all console projects.
+
+*  Queen Attack
 
 
 #### Please add a link to GitHub repository to all projects you worked on today:

@@ -1,15 +1,17 @@
 using System;
-
-public class GroceryList
+namespace ConsoleLessons
 {
-  public static void Enter()
-  {
-    string[] myGroceryList = { "eggs", "milk", "bread", "bananas", "cereal", "rice", "Dad", "pizza", "dead rat", "chef boyardee's 'Food' bites" };
-
-    Console.WriteLine("My grocery list:");
-    for (int index = 0; index < myGroceryList.Length; index++)
+    public class GroceryList
     {
-      Console.WriteLine(myGroceryList[index]);
+        public static void Enter()
+        {
+            string[] myGroceryList = { "eggs", "milk", "bread", "bananas", "cereal", "rice", "Dad", "pizza", "dead rat", "chef boyardee's 'Food' bites" };
+
+            Console.WriteLine("My grocery list:");
+            for (int index = 0; index < myGroceryList.Length; index++)
+            {
+                Console.WriteLine(myGroceryList[index]);
+            }
+        }
     }
-  }
 }

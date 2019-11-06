@@ -1,19 +1,21 @@
 using System;
-
-public class RatedR
+namespace ConsoleLessons
 {
-  public static void Enter()
-  {
-    Console.WriteLine("What is your name?");
-    string userName = Console.ReadLine();
-    if (userName.StartsWith("Z"))
+    public class RatedR
     {
-      Console.WriteLine("Your name starts with a Z!");
+        public static void Enter()
+        {
+            Console.WriteLine("What is your name?");
+            string userName = Console.ReadLine();
+            if (userName.StartsWith("Z"))
+            {
+                Console.WriteLine("Your name starts with a Z!");
+            }
+            else
+            {
+                Console.WriteLine("Your name doesn't start with a Z :(");
+            }
+            Lessons.Pause();
+        }
     }
-    else
-    {
-      Console.WriteLine("Your name doesn't start with a Z :(");
-    }
-    Lessons.Pause();
-  }
 }

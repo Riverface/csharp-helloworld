@@ -1,4 +1,6 @@
 using System;
+namespace ConsoleLessons
+{
 public class MealTime
 {
   public static void Enter()
@@ -16,4 +18,5 @@ public class MealTime
     Console.WriteLine("You had " + yourMeal + " for " + meal + ".");
   
   }
+}
 }

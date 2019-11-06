@@ -1,10 +1,12 @@
 using System;
-
-public class Program
+namespace ConsoleLessons
 {
-  public static void Enter()
-  {
-    Console.WriteLine("Hello World");
-    Lessons.Pause();
-  }
+    public class Program
+    {
+        public static void Enter()
+        {
+            Console.WriteLine("Hello World");
+            Lessons.Pause();
+        }
+    }
 }

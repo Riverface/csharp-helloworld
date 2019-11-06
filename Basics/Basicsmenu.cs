@@ -1,56 +1,57 @@
 using System;
-using static QueenAttack;
-using static Car;
-public class BasicsMenu
+namespace ConsoleLessons
 {
-    static string state = "";
-    static int lesson = 0;
-    public static void Enter()
+    public class BasicsMenu
     {
-
-        BMenu();
-
-
-    }
-    public static void BMenu()
-    {
-
-        Console.WriteLine("Press a key to continue when the application pauses.");
-        Console.WriteLine("Ok?");
-        Console.ReadKey();
-        Console.WriteLine("Great! Here are the projects. Press a number and Press Enter to select one.");
-        Console.WriteLine("1.) Queen Attack!");
-        Console.WriteLine("Evaluates the chess move of a Queen to determine its validity.");
-
-        BasicsMenu.state = Console.ReadLine();
-        if (BasicsMenu.state != "" )
+        static string state = "";
+        static int lesson = 0;
+        public static void Enter()
         {
-            BasicsMenu.lesson = System.Convert.ToInt32(BasicsMenu.state);
+
+            BMenu();
+
+
         }
-        Selection();
-    }
-    public static void Pause()
-    {
-        Console.WriteLine("...And that's the program. Press any key to continue back to the main menu.");
-        Console.ReadKey();
-        BasicsMenu.BMenu();
-        Console.Beep();
-    }
-    public static void Selection()
-    {
-
-        switch (BasicsMenu.lesson)
+        public static void BMenu()
         {
-            case 1:
-                QueenAttack.Enter();
-                break;
+
+            Console.WriteLine("Press a key to continue when the application pauses.");
+            Console.WriteLine("Ok?");
+            Console.ReadKey();
+            Console.WriteLine("Great! Here are the projects. Press a number and Press Enter to select one.");
+            Console.WriteLine("1.) Queen Attack!");
+            Console.WriteLine("Evaluates the chess move of a Queen to determine its validity.");
+
+            BasicsMenu.state = Console.ReadLine();
+            if (BasicsMenu.state != "")
+            {
+                BasicsMenu.lesson = System.Convert.ToInt32(BasicsMenu.state);
+            }
+            Selection();
+        }
+        public static void Pause()
+        {
+            Console.WriteLine("...And that's the program. Press any key to continue back to the main menu.");
+            Console.ReadKey();
+            BasicsMenu.BMenu();
+            Console.Beep();
+        }
+        public static void Selection()
+        {
+
+            switch (ConsoleLessons.BasicsMenu.lesson)
+            {
+                case 1:
+                    QueenAttack.Enter();
+                    break;
                 case 2:
-                CarProg.Enter();
-                break;
-            default:
-                Console.WriteLine("What?");
-                BMenu();
-                break;
+                    CarProg.Enter();
+                    break;
+                default:
+                    Console.WriteLine("What?");
+                    BMenu();
+                    break;
+            }
         }
     }
 }
