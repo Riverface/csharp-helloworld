@@ -21,7 +21,12 @@ namespace ConsoleLessons
             Console.WriteLine("Great! Here are the projects. Press a number and Press Enter to select one.");
             Console.WriteLine("1.) Queen Attack!");
             Console.WriteLine("Evaluates the chess move of a Queen to determine its validity.");
-
+            Console.ReadKey();
+            Console.WriteLine("2.)Car");
+            Console.WriteLine("Search for cars.");
+            Console.ReadKey();
+            Console.WriteLine("3.)Palindrome");
+            Console.WriteLine("Check if a word or sentence is a palindrome");
             BasicsMenu.state = Console.ReadLine();
             if (BasicsMenu.state != "")
             {
@@ -46,6 +51,15 @@ namespace ConsoleLessons
                     break;
                 case 2:
                     CarProg.Enter();
+                    break;
+                case 3:
+                    Palindrome.Enter();
+                    break;
+                    case 4:
+                    Primes.Enter();
+                    break;
+                    case 5:
+                    Game.Game();
                     break;
                 default:
                     Console.WriteLine("What?");
