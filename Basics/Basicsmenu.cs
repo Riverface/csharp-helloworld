@@ -58,9 +58,6 @@ namespace ConsoleLessons
                     case 4:
                     Primes.Enter();
                     break;
-                    case 5:
-                    Game.Game();
-                    break;
                 default:
                     Console.WriteLine("What?");
                     BMenu();
