@@ -3,10 +3,10 @@ using System.Collections.Generic;
 namespace TextAdventure
 {
 
-    class MainGame
+    public class MainGame
     {
 
-            TextGame(string name){
+            public TextGame(string name){
             this.name = name;
             this.rooms = rooms;
             this.items = items;
