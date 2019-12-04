@@ -1,11 +1,11 @@
 using System;
 using TextAdventure.TALib;
-namespace TextAdventure {
+namespace TextAdventure.TALib {
 
     public class TAFuncLib {
         bool game;
         string input = Console.ReadLine ();
-        public Room RoomSearch (int id, World thisworld) {
+        public static Room RoomSearch (int id, World thisworld) {
             Room result = null;
             foreach (Room foundroom in thisworld.places) {
                 if (foundroom.id == id) {
@@ -14,8 +14,8 @@ namespace TextAdventure {
             }
             return result;
         }
-        public void Buffer (Player one, string input, Room roomyouarein, World world) {
-            while (game == true) {
+        public static void GameBuffer (Player one, string input, Room roomyouarein, World world) {
+            while (world.game == true) {
                 switch (input.Split (" ") [0]) {
                     case "look":
                         break;
@@ -35,7 +35,7 @@ namespace TextAdventure {
                 }
             }
         }
-        public void UseItem (Item theitem, Room place, dynamic otheritem) {
+        public static void UseItem (Item theitem, Room place, dynamic otheritem) {
             Item thisObject = theitem;
             Item otherobject = otheritem;
             foreach (Trigger thisTrig in theitem.trigarray) {
@@ -49,7 +49,7 @@ namespace TextAdventure {
 
             }
         }
-        public void Look (Player one, string lookobject, World thisworld) {
+        public static void Look (Player one, string lookobject, World thisworld) {
             if (lookobject.Length > 0) {
                 Console.WriteLine (lookobject);
             } else {
@@ -57,8 +57,8 @@ namespace TextAdventure {
             }
         }
 
-        public Item Itemsearch (string itemname, Player one, Room isin) {
-            Item emptyItem = new Item("Sorry nothing",0,new Trigger[0], "I AM ERROR");
+        public static Item Itemsearch (string itemname, Player one, Room isin) {
+            Item emptyItem = new Item("Sorry nothing",0, "I AM ERROR");
             Item result = emptyItem;
             foreach (Item thisitem in one.inventory) {
                 if (thisitem.name == itemname) {
@@ -80,6 +80,7 @@ namespace TextAdventure {
             }
             return result;
         }
+    
     }
     
 }

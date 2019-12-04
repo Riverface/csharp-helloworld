@@ -5,11 +5,11 @@ namespace TextAdventure.TALib {
         public int id;
         public Trigger[] trigarray;
         public string lookDesc;
-        
-         public Item (string name, int id, Trigger[] trigArray, string lookDesc) {
+
+        public Item (string name, int id, string lookDesc) {
             this.name = name;
             this.id = id;
-            this.trigarray = trigArray;
+            this.trigarray = new Trigger[255];
             this.lookDesc = lookDesc;
         }
     }
@@ -22,11 +22,10 @@ namespace TextAdventure.TALib {
         public bool usable;
         public int used;
 
-
-         public Trigger (string name, int id, string[] sequence, string[] DevDesc, int used) {
+        public Trigger (string name, int id, string[] sequence, string[] DevDesc, int used) {
             this.name = name;
             this.id = id;
-            this.sequence = sequence;
+            this.sequence = new string[255];
             this.DevDesc = DevDesc;
             this.used = used;
             this.reusable = new bool ();
@@ -47,25 +46,25 @@ namespace TextAdventure.TALib {
         public Player you;
         public string name;
         public int id;
-        public Object[] trigArray;
+        public Trigger[] trigArray;
         public string lookDesc;
-        public Object[] items;
-        public Object[] exits;
+        public Item[] items;
+        public Exit[] exits;
 
-         public Room ( string name, int id, Object[] trigArray, string lookDesc, Item[] items) {
+        public Room (int id, string name, string lookDesc) {
             this.name = name;
             this.id = id;
-            this.trigArray = trigArray;
+            this.trigArray = new Trigger[255];
             this.lookDesc = lookDesc;
-            this.exits = exits;
-            this.items = items;
+            this.exits = new Exit[255];
+            this.items = new Item[255];
         }
     }
     public class Exit {
         public int goesto;
         public string lookDesc;
         public string name;
-         public Exit (string name, string LookDesc, int goesto) {
+        public Exit (string name, string LookDesc, int goesto) {
             this.goesto = goesto;
             this.lookDesc = LookDesc;
             this.name = name;
@@ -74,11 +73,11 @@ namespace TextAdventure.TALib {
 
     public class World {
         public Room[] places = new Room[255];
-        public bool game;
+        public bool game = false;
         public Player player;
-         public World () {
+        public World () {
             this.player = new Player ();
-
+            this.game = game;
         }
     }
-    }
+}

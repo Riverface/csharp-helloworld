@@ -1,5 +1,5 @@
 using System;
-
+using TextAdventure;
 namespace ConsoleLessons
 {
 
@@ -80,6 +80,9 @@ namespace ConsoleLessons
                     break;
                 case 7:
                     GroceryList.Enter();
+                    break;
+                    case 8:
+                    TextAdventure.MainGame.mainworld.Enter();
                     break;
                 default:
                     Console.WriteLine("What?");
